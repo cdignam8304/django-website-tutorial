@@ -14,8 +14,8 @@ def single_slug(request, single_slug):
         Params:
             - single_slug: e.g. in  "localhost:8000/admin/", admin is the single_slug
     """
-    print("The function single_slug has been called...") # for debug
-    print(f"The single_slug is: {single_slug}") # for debug
+    # print("The function single_slug has been called...") # for debug
+    # print(f"The single_slug is: {single_slug}") # for debug
     
     categories = [c.category_slug for c in TutorialCategory.objects.all()]
     if single_slug in categories:
